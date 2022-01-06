@@ -133,7 +133,7 @@ listeners = []
 
 def add_mega_download(mega_link: str, path: str, listener):
     executor = AsyncExecutor()
-    api = MegaApi(MEGA_API_KEY, None, None, 'Atrocious_Mirror_Bot)
+    api = MegaApi(MEGA_API_KEY, None, None, 'atrociousmirrorbot)
     mega_listener = MegaAppListener(executor.continue_event, listener)
     global listeners
     api.addListener(mega_listener)
